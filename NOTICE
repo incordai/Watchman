@@ -1,0 +1,57 @@
+Watchman by Incord AI, under the Apache License 2.0 with the Commons Clause
+(see LICENSE). Its design was inspired by MonoCode
+(https://github.com/hardbeat920/monocode), and the parts that come from it are
+used under the MIT License; MonoCode's copyright notice is kept in LICENSE.
+
+Watchman ships the Inmem memory engine (incord-memory-service) by Incord AI,
+which is licensed separately under the Business Source License 1.1.
+
+Watchman is not affiliated with, endorsed by, or sponsored by the makers of the
+agent harnesses it can drive.
+
+Provider marks that appear in the UI (including Claude, Codex, Cursor, GitHub, GitLab, Linear, Grok, OpenCode, Pi, omp, fx, Hermes, and Nous Research) are trademarks of their respective owners and are used only to identify those products.
+
+Third-party models and credits
+
+The code names these models by Incord's own names; each is credited here
+under the name its authors gave it.
+
+Incord-STT-Fast (speech-to-text): SenseVoice-small (SenseVoiceSmall), by FunAudioLLM, Tongyi Lab,
+Alibaba Group (https://github.com/FunAudioLLM/SenseVoice). Copyright (C)
+2023-2028 Alibaba Group. Used under the FunASR Model Open Source License
+Agreement v1.1 (https://github.com/modelscope/FunASR/blob/main/MODEL_LICENSE):
+free to use, copy, modify and share, with the source, author and model name
+kept. The model is provided by its authors for reference and learning, and
+Alibaba Group accepts no responsibility for losses from its use. Watchman's
+memory engine downloads these weights, converted to another file format with
+their values unchanged, and runs them with its own code.
+
+Incord-STT-Small (speech-to-text in many languages, chosen in the settings or
+kept by an install that already has it): Whisper small, by OpenAI
+(https://github.com/openai/whisper), used under the MIT License.
+
+Incord-TTS (text-to-speech): Kokoro-82M, by hexgrad
+(https://huggingface.co/hexgrad/Kokoro-82M), used under the Apache License 2.0.
+Its English phoneme rules are a port of the rules of misaki, the phonemiser the
+model was trained with (https://github.com/hexgrad/misaki).
+
+Incord-OCR (text recognition): PP-OCRv6 small, by PaddlePaddle, used under the
+Apache License 2.0: the detector
+(https://huggingface.co/PaddlePaddle/PP-OCRv6_small_det_safetensors, revision
+eae2ee920a39fb3087637d3dbb58df1896ec1f24) and the recogniser
+(https://huggingface.co/PaddlePaddle/PP-OCRv6_small_rec_safetensors, revision
+fe049fb103f57443fe8840c54ed06b702f3c1de5), read as published.
+
+Incord-RAG (search): the embedder is Qwen3-Embedding-0.6B
+(https://huggingface.co/Qwen/Qwen3-Embedding-0.6B, revision
+97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3) and the reranker is
+Qwen3-Reranker-0.6B (https://huggingface.co/Qwen/Qwen3-Reranker-0.6B, revision
+e61197ed45024b0ed8a2d74b80b4d909f1255473), both by the Qwen team, Alibaba
+Group, used under the Apache License 2.0. Watchman's memory engine downloads
+them quantised to 4 bits and runs them with its own code.
+
+Incord-Mini (the local language model): MiniCPM5-2B, by OpenBMB
+(https://huggingface.co/openbmb/MiniCPM5-2B, revision
+42433e90dad95123ab87729fd7011e7110629556), used under the Apache License 2.0.
+Watchman's memory engine downloads it quantised to 4 bits and runs it with its
+own code.
